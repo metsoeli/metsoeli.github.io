@@ -1,0 +1,95 @@
+/* Fonts */
+@charset "utf-8";
+
+@font-face {
+font-family: "Quattrocento Sans";
+src: url("fontit/Quattrocento_Sans/QuattrocentoSans-Regular.ttf");
+}
+
+@font-face {
+font-family: "Quattrocento Sans Bold";
+src: url("fontit/Quattrocento_Sans/QuattrocentoSans-Bold.ttf");
+}
+
+@font-face {
+font-family: "Volkov";
+src: url("fontit/Volkhov/Volkhov-Regular.ttf");
+}
+
+@font-face {
+font-family: "Volkov Bold";
+src: url("fontit/Volkhov/Volkhov-Bold.ttf");
+}
+
+:root {
+    --default-font: "Quattrocento Sans", serif;
+    --default-font-bold: "Quattrocento Sans Bold", serif;
+    --heading-font: "Volkov",  sans-serif;
+    --nav-font: "Volkov",  sans-serif;
+  }
+
+/* Global Colors */
+:root {
+    --background-color:#ffffff;
+    --default-color:#193441;
+    --heading-color: #3E606F;
+    --accent-color: #4fcac2;
+    --surface-color: #ffffff;
+    --contrast-color: #ffffff;
+}
+
+/* Nav Menu Colors */
+:root {
+    --nav-backround-color:#193441;
+    --nav-color:#91AA9D;
+    --nav-hover-color: #FCFFF5;
+    --nav-dropdown-color:#FCFFF5;
+    --nav-dropdown-hover-color: #FCFFF5;
+}
+
+/* Color Presets */
+.light-background {
+    --background-color:#F2F2F2;
+    --surface-color: #ffffff;
+    --accent-color: #3E606F;
+    --contrast-color: #4fcac2;
+}
+
+.dark-background {
+    --background-color:#193441;
+    --default-color: #FCFFF5;
+    --heading-color: #FCFFF5;
+    --surface-color: #193441;
+    --contrast-color:#F2F2F2;
+}
+
+/* --------------------------------------------------------------------------------
+# General Styling
+--------------------------------------------------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 0 0 0 300px;
+}
+
+/* ----------- HEADER ------------ */
+
+header .profile-img img {
+    display: block;
+    width: 120px;
+    border-radius: 50% !important;
+}
+
+.side-header {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    box-sizing: border-box;
+}
